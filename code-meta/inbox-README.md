@@ -1,6 +1,6 @@
-# Audit inbox
+# Inbox
 
-Audit findings go in an inbox folder: Codex writes to `~/code/_audits/`, Antigravity to `~/code/_antigravity/_audits/` (its workspace can't reach the shared folder). Both use this format. Claude reads them at session start, proposes fixes, and acts only after John approves. Files are deleted once every finding is fixed or declined.
+Audit findings and handoff notes go in one shared folder, `~/code/_inbox/`. Every agent writes there, using the formats below. Claude reads them at session start, proposes fixes, and acts only after John approves. Files are deleted once every finding is fixed or declined.
 
 ## File name
 
@@ -32,11 +32,11 @@ Auditor: <codex | antigravity> · Commit: <short hash audited> · Date: <YYYY-MM
 Rules for auditors:
 - Report findings only. Do not edit code to fix them.
 - One finding per issue, most severe first. Say so when you are unsure.
-- Write only inside your inbox folder.
+- Write only inside `~/code/_inbox/`.
 
 ## Handoff notes
 
-Anyone who writes code on a branch (Codex on `codex/<topic>`, Antigravity on `antigravity/<topic>`) leaves one handoff note per branch in their inbox when they finish. It tells Claude what the branch is for and which parts to merge, so a mixed branch doesn't need to be untangled from the diff.
+Anyone who writes code on a branch (Codex on `codex/<topic>`, Antigravity on `antigravity/<topic>`) leaves one handoff note per branch in the inbox when they finish. It tells Claude what the branch is for and which parts to merge, so a mixed branch doesn't need to be untangled from the diff.
 
 ### File name
 
