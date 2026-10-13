@@ -13,5 +13,6 @@ Rebuilds my `~/code` layout on a new machine. No secrets, no `.env` files, no no
 2. `npm install` in each repo; recreate `.env.local` (AI-Capital-Planning, Personal-Dashboard) from the password manager.
 3. Bring `~/.claude/CLAUDE.md` and `~/memory/` over separately (not stored in this public repo).
 4. `claude` then `/login`; enable the Drive connector.
+5. Desktop customizations (shell, shortcuts, theme, extensions) are in the private [ubuntu-setup](https://github.com/jonncy18-maker/ubuntu-setup) repo; run its `restore.sh`.
 
 Branch rules, worktree commands and the integration steps: [BRANCHING.md](https://github.com/jonncy18-maker/Agentic-Loop/blob/main/BRANCHING.md) in Agentic-Loop. `code-meta/` holds the inbox README.
