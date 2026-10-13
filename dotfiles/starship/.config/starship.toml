@@ -1,0 +1,12 @@
+# Starship prompt: short, shows folder, git branch/state, and Node version in JS projects.
+add_newline = true
+command_timeout = 500
+
+[directory]
+truncation_length = 3
+
+[git_branch]
+symbol = " "
+
+[nodejs]
+symbol = " "

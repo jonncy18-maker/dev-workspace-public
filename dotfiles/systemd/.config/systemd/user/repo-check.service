@@ -1,0 +1,6 @@
+[Unit]
+Description=Check ~/code repos for unsaved or unpushed work
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/repo-check
