@@ -14,6 +14,7 @@ for r in $REPOS; do
 done
 cp -n "$HERE/code-meta/inbox-README.md" ~/code/_inbox/README.md
 echo "Optional shell tools + dotfiles: ./dotfiles/install-shell-tools.sh"
+echo "Optional keyboard shortcuts: ./dotfiles/gnome/restore-shortcuts.sh"
 echo "Done. Next: npm install in each repo; recreate .env.local files from your password manager;"
 echo "copy ~/.claude/CLAUDE.md and ~/memory/ (see README) and run /login in Claude Code."
 echo "New agent branch: git -C ~/code/<repo> worktree add ../_worktrees/<repo>/<agent>-<topic> -b <agent>/<topic> main"
